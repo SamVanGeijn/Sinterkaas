@@ -13,7 +13,7 @@ export const rijmen : Array<any> = [
     },
     { 
         kazen: ['Geraspte Kaas'], 
-        rijmen: 'De Sint vindt dat een rare keus, maar ik neem aan dat je pasta maakt. Daarom krijg je van de pietenbaas 500 gram <KAAS>!'
+        rijmen: 'De Sint vindt dat een rare keus, maar ik neem aan dat je pasta maakt. Daarom krijg je van de pietenbaas <KAAS>!'
     },
     { 
         kazen: ['Mozzarella'], 

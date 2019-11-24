@@ -6,8 +6,8 @@ import { rijmen } from './rijmen';
 const app = dialogflow({ debug: true });
 
 app.intent('Kaas Verzoek', async (conv, params) => {
-    let rijm: any = rijmen.filter(eenRijm => eenRijm.kazen.includes(params.Kazen));
-    let rijmString: string = rijm[0].rijmen.replace("<KAAS>", params.Kazen as string);
+    const rijmArray: any = rijmen.filter(eenRijm => eenRijm.kazen.includes(params.Kazen));
+    const rijmString: string = rijmArray[Math.floor(Math.random() * rijmArray.length)].rijmen.replace("<KAAS>", params.Kazen as string);
     conv.ask(rijmString);
 });
 
